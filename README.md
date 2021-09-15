@@ -5,3 +5,5 @@ Performing analysis on Kickstarter data to uncover trends, determine the best ap
 ![OutcomesBasedOnLaunchDate](https://user-images.githubusercontent.com/89402038/133488096-d4d2cd52-4cdc-4e0a-825b-3a3da245a2fe.png)
 ---
 As shown in the previous two images an analysis was made first on a macro perspective to determine the best campaign to raise funds for our project and afterwards based on the date provided establish the best time of the year to execute the campaign.
+## Recomendations
+I should suggest focusing on theatre for our crowdfunding and focus on launching this campaign during May-June, because normally this correlates to succesful campaigns.
