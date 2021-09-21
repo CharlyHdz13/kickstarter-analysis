@@ -38,10 +38,31 @@ For the following analysis I created a whole new sheet with the following table:
 
 ![image](https://user-images.githubusercontent.com/89402038/134093909-6d5ad8e5-ea6d-4c49-a65b-0ba8c2b2c8a1.png)
 
-For the first three columns (_Number Successful, Number Failed, Number Canceled_)
-![ParentCategoryOutcomesUS](https://user-images.githubusercontent.com/89402038/133488104-0836470c-c705-4a13-91dc-66220299a133.png)
-![OutcomesBasedOnLaunchDate](https://user-images.githubusercontent.com/89402038/133488096-d4d2cd52-4cdc-4e0a-825b-3a3da245a2fe.png)
+For the first three columns (_Number Successful, Number Failed and Number Canceled_) were made using the formula `COUNTIFS()`. Inside the formula the criteria used were first if the outcome was successful, failed or canceled, then the second criteria was the range were the goal of the campaign was set and finally the last criteria was for the campaign to be a _play_ in the _Subcategory_ column.
 
-As shown in the previous two images an analysis was made first on a macro perspective to determine the best campaign to raise funds for our project and afterwards based on the date provided establish the best time of the year to execute the campaign.
-## Recomendations
-I should suggest focusing on theatre for our crowdfunding and focus on launching this campaign during May-June, because normally this correlates to succesful campaigns.
+The column _Total Projects_ is the sum of the numbers of in the first three columns. Afterwards, to obtain the percentages is just the division of the value on the first three columns dived by the value in _Total Projects_. I just adjusted the format for these values to be in percentage and removed the decimals, in order for them to be round numbers.
+
+Once done all of the above I created the following line chart to view the trends:
+
+![Outcomes_vs_Goals](https://user-images.githubusercontent.com/89402038/134200041-36e4e5e1-af2c-42c3-8807-1ec95eaf2b7c.png)
+
+As a quick analysis on the graph, the best percentage obtained for the succesful campaign is near 80%. This value is obtained when the campaigns have a goal around $1000 to $5000. After this the percentage only decreases and the probability of having a failed campaign just increases. There for the sweet spot for the campaign should be around the values mentioned earlier.
+
+### Challenges and Difficulties Encountered
+
+The most challenges encountered were to know how to filter, organize and use the data, but as explained in the previous two parts these challenges where solved by using formulas from Excel and Pivot tables. A part from those another difficulty perhaps could be to determine which is the best graph that can help us visualize what we want. In this analysis both were line charts because we were interested in identifying trends, but perhaps also a bar graph could have solved our problem. 
+
+## Results
+
+- What are two conclusions you can draw about the Outcomes based on Launch Date?
+
+  Based on the data, seeing that their is a high number of succesful campaigns launched around May and June shows that around this time is the best to launch a theatrical   campaign. It is also worth noting that around this period of time is when there are the most failed campaigns, regardless of that this period of time is still the best to launcha a campaign because the difference from successful to failed campaigns is the biggest, meaning that a campaign launched during this time will have high probabilities of success.
+- What can you conclude about the Outcomes based on Goals?
+
+  As I mentioned earlier the sweet spot to having a successful campaign and setting realistic goals is around $1000 to $5000 this is where the difference between failed and succesful campaigns is the best, therefore increasing the probabilities of having a successful campaign. Increasing the goal will only reduce the probabilities of our play to fail.
+- What are some limitations of this dataset?
+
+  As a few limitations I would see that we do not know how many shows each campaign had, the exact location of each and the size of the theater that hosted this campaigns. I think this could be key factors in order to increase the probabilities of having a successful campaign. 
+
+- What are some other possible tables and/or graphs that we could create?
+  I would also take a look at the ratio between goal and pledged based on launch date, or perhaps take a look into the average donation based of the number of backers that assisted to these campaigns. This perhaps could help us have a better insight onto the best strategy to launch a fundraising campaign.
