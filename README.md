@@ -65,4 +65,5 @@ The most challenges encountered were to know how to filter, organize and use the
   As a few limitations I would see that we do not know how many shows each campaign had, the exact location of each and the size of the theater that hosted this campaigns. I think this could be key factors in order to increase the probabilities of having a successful campaign. 
 
 - What are some other possible tables and/or graphs that we could create?
+  
   I would also take a look at the ratio between goal and pledged based on launch date, or perhaps take a look into the average donation based of the number of backers that assisted to these campaigns. This perhaps could help us have a better insight onto the best strategy to launch a fundraising campaign.
